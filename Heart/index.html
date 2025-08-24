@@ -3,62 +3,56 @@
 <head>
 <title>Pumping Heart & Message</title>
 <style>
-  body {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    background-color: black;
-    margin: 0;
-  }
-
-  .pumping-heart {
-    font-size: 250px;
-    color: red;
-    animation: pump 1s infinite;
-  }
-
-  .message {
-    color: red;
-    text-align: center;
-    margin-top: 2vh;
-  }
-
-  @keyframes pump {
-    0% { transform: scale(1); }
-    50% { transform: scale(1.1); }
-    100% { transform: scale(1); }
-  }
+body {
+background-color: black;
+margin: 0;
+}
+.heart-container {
+position: absolute;
+top: 3vh;
+left: 50%;
+transform: translateX(-50%);
+}
+.pumping-heart {
+font-size: 250px;
+color: red;
+animation: pump 1s infinite;
+}
+.message {
+color: red;
+text-align: left;
+margin-top: 3vh;
+padding-left: 10vw; /* Add some left padding for alignment /
+font-size: 1.1em; / Slightly bigger font /
+white-space: pre-wrap; / Preserve line breaks */
+}
+@keyframes pump {
+0% { transform: scale(1); }
+50% { transform: scale(1.1); }
+100% { transform: scale(1); }
+}
 </style>
 </head>
 <body>
-  <div class="pumping-heart">❤</div>
-
-  <div class="message">
-    <p>
-      🌹
-      When I see you, time slows down,<br>
-      Your presence lifts me off the ground.<br>
-      No words can tell, no stars above,<br>
-      The depth of what I feel is love.
-    </p>
-    <p>
-      You’re the song my heart keeps near,<br>
-      The gentle voice I long to hear.<br>
-      Each beat of mine, both night and day,<br>
-      Whispers your name in every way.
-    </p>
-    <p>
-      So take my hand, and you will see,<br>
-      The world feels right with you and me.<br>
-      No greater truth my heart could show,<br>
-      Than loving you forever so.
-    </p>
-    <p>
-      ⚡ And from my heart, hear this truth:<br>
-      I love you with everything in me, and I want you to be my one and only girl. You are my choice, my dream, and my forever. ❤
-    </p>
-  </div>
+<div class="heart-container">
+<div class="pumping-heart">❤</div>
+</div>
+<div class="message">
+🌹
+When I see you, time slows down,
+Your presence lifts me off the ground.
+No words can tell, no stars above,
+The depth of what I feel is love.
+You’re the song my heart keeps near,
+The gentle voice I long to hear.
+Each beat of mine, both night and day,
+Whispers your name in every way.
+So take my hand, and you will see,
+The world feels right with you and me.
+No greater truth my heart could show,
+Than loving you—forever so.
+⚡ And from my heart, hear this truth:
+I love you with everything in me, and I want you to be my one and only girl. You are my choice, my dream, and my forever. ❤️
+</div>
 </body>
 </html>
