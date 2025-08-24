@@ -1,32 +1,64 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>Pumping Heart Emoji</title>
+<title>Pumping Heart & Message</title>
 <style>
   body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
     background-color: black;
     margin: 0;
-    overflow: hidden;
   }
 
   .pumping-heart {
     font-size: 250px;
     color: red;
-    position: absolute;
-    top: 3vh;
-    left: 50%;
-    transform: translateX(-50%);
     animation: pump 1s infinite;
   }
 
+  .message {
+    color: red;
+    text-align: center;
+    margin-top: 2vh;
+  }
+
   @keyframes pump {
-    0% { transform: translateX(-50%) scale(1); }
-    50% { transform: translateX(-50%) scale(1.1); }
-    100% { transform: translateX(-50%) scale(1); }
+    0% { transform: scale(1); }
+    50% { transform: scale(1.1); }
+    100% { transform: scale(1); }
   }
 </style>
 </head>
 <body>
   <div class="pumping-heart">❤</div>
+
+  <div class="message">
+    <p>
+      🌹
+      When I see you, time slows down,<br>
+      Your presence lifts me off the ground.<br>
+      No words can tell, no stars above,<br>
+      The depth of what I feel is love.
+    </p>
+    <p>
+      You’re the song my heart keeps near,<br>
+      The gentle voice I long to hear.<br>
+      Each beat of mine, both night and day,<br>
+      Whispers your name in every way.
+    </p>
+    <p>
+      So take my hand, and you will see,<br>
+      The world feels right with you and me.<br>
+      No greater truth my heart could show,<br>
+      Than loving you forever so.
+    </p>
+    <p>
+      ⚡ And from my heart, hear this truth:<br>
+      I love you with everything in me, and I want you to be my one and only girl. You are my choice, my dream, and my forever. ❤
+    </p>
+  </div>
 </body>
 </html>
