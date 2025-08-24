@@ -1,49 +1,35 @@
 <!DOCTYPE html>
 <html>
 <head>
+<title>Pumping Heart</title>
 <style>
 body {
-  background-color: #f0f0f0;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  min-height: 100vh;
+display: flex;
+justify-content: center;
+align-items: center;
+min-height: 100vh;
+background-color: black;
+margin: 0;
 }
-
-.heart {
-  position: relative;
-  width: 100px;
-  height: 90px;
-  animation: pulse 1s infinite;
+.heart-container {
+width: 300px; /* Adjust as needed /
+height: 300px; / Adjust as needed */
+background-image: url('');
+background-size: contain;
+background-repeat: no-repeat;
+animation: pump 1.5s infinite alternate;
 }
-
-.heart:before,
-.heart:after {
-  content: "";
-  position: absolute;
-  top: 0;
-  width: 50px;
-  height: 80px;
-  background-color: #ff0000;
-  border-radius: 50px 50px 0 0;
-  transform: rotate(-45deg);
-  transform-origin: 0 100%;
+@keyframes pump {
+0% {
+transform: scale(1);
 }
-
-.heart:after {
-  left: 0;
-  transform: rotate(45deg);
-  transform-origin: 100% 100%;
+100% {
+transform: scale(1.05);
 }
-
-@keyframes pulse {
-  0% { transform: scale(1); }
-  50% { transform: scale(1.2); }
-  100% { transform: scale(1); }
 }
 </style>
 </head>
 <body>
-  <div class="heart"></div>
+<div class="heart-container"></div>
 </body>
 </html>
