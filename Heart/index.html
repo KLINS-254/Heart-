@@ -12,11 +12,26 @@
     padding-top: 3vh;
   }
 
+  .heart-and-pics-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 2vh;
+  }
+
+  .image {
+    width: 100px;
+    height: 100px;
+    background-size: cover;
+    background-position: center;
+    border-radius: 50%;
+    margin: 0 20px;
+  }
+
   .pumping-heart {
     font-size: 250px;
     color: red;
     animation: pump 1s infinite;
-    margin-bottom: 2vh;
   }
 
   .message {
@@ -35,8 +50,12 @@
 </style>
 </head>
 <body>
-  
-  <div class="pumping-heart">❤</div>
+
+  <div class="heart-and-pics-container">
+    <div class="image left-image" style="background-image: url('YOUR_LEFT_IMAGE_URL.jpg');"></div>
+    <div class="pumping-heart">❤</div>
+    <div class="image right-image" style="background-image: url('YOUR_RIGHT_IMAGE_URL.jpg');"></div>
+  </div>
 
   <div class="message">
     <p>
@@ -57,13 +76,10 @@
       The world feels right with you and me.<br>
       No greater truth my heart could show,<br>
       Than loving you—forever so.
-    
     </p>
     <p>
       ⚡ And from my heart, hear this truth:<br>
       I love you with everything in me, and I want you to be my one and only girl. You are my choice, my dream, and my forever. ❤
-      
-   Inshallah having you as a friend. 💋😍👫
     </p>
   </div>
 
