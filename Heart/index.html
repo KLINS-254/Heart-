@@ -9,24 +9,24 @@
     align-items: center;
     background-color: black;
     margin: 0;
-    padding-top: 3vh; /* Moves everything down from the top */
+    padding-top: 3vh;
   }
 
   .pumping-heart {
     font-size: 250px;
     color: red;
     animation: pump 1s infinite;
-    margin-bottom: 2vh; /* Creates a gap between the heart and the text */
+    margin-bottom: 2vh;
   }
 
   .message {
     color: red;
     text-align: left;
     font-size: 1.2em;
-    width: 80%; /* Sets a width for better left alignment on wide screens */
+    width: 80%;
     max-width: 600px;
   }
-
+  
   @keyframes pump {
     0% { transform: scale(1); }
     50% { transform: scale(1.1); }
@@ -35,6 +35,7 @@
 </style>
 </head>
 <body>
+  
   <div class="pumping-heart">❤</div>
 
   <div class="message">
@@ -62,5 +63,11 @@
       I love you with everything in me, and I want you to be my one and only girl. You are my choice, my dream, and my forever. ❤
     </p>
   </div>
+
+  <audio autoplay loop hidden>
+    <source src="justice.mp3" type="audio/mpeg">
+    Your browser does not support the audio element.
+  </audio>
+
 </body>
 </html>
