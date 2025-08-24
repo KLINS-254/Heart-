@@ -1,35 +1,31 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>Pumping Heart</title>
+<title>Pumping Heart Emoji</title>
 <style>
-body {
-display: flex;
-justify-content: center;
-align-items: center;
-min-height: 100vh;
-background-color: black;
-margin: 0;
-}
-.heart-container {
-width: 300px; /* Adjust as needed /
-height: 300px; / Adjust as needed */
-background-image: url('');
-background-size: contain;
-background-repeat: no-repeat;
-animation: pump 1.5s infinite alternate;
-}
-@keyframes pump {
-0% {
-transform: scale(1);
-}
-100% {
-transform: scale(1.05);
-}
-}
+  body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: black;
+    margin: 0;
+  }
+  
+  .pumping-heart {
+    font-size: 150px;
+    color: red;
+    animation: pump 1s infinite;
+  }
+  
+  @keyframes pump {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.1); }
+    100% { transform: scale(1); }
+  }
 </style>
 </head>
 <body>
-<div class="heart-container"></div>
+  <div class="pumping-heart">❤</div>
 </body>
 </html>
