@@ -3,28 +3,30 @@
 <head>
 <title>Pumping Heart Emoji</title>
 <style>
-body {
-display: flex;
-justify-content: center;
-align-items: center;
-height: 100vh;
-background-color: black;
-margin: 0;
-}
-.pumping-heart {
-font-size: 200px; /* Increased size /
-color: red;
-animation: pump 1s infinite;
-margin-bottom: 50px; / Moved upwards */
-}
-@keyframes pump {
-0% { transform: scale(1); }
-50% { transform: scale(1.1); }
-100% { transform: scale(1); }
-}
+  body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: black;
+    margin: 0;
+  }
+
+  .pumping-heart {
+    font-size: 250px;
+    color: red;
+    animation: pump 1s infinite;
+    transform: translateY(-50px);
+  }
+
+  @keyframes pump {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.1); }
+    100% { transform: scale(1); }
+  }
 </style>
 </head>
 <body>
-<div class="pumping-heart">❤</div>
+  <div class="pumping-heart">❤</div>
 </body>
 </html>
