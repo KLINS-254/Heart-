@@ -20,8 +20,8 @@
   }
 
   .image {
-    width: 300px; /* Increased size to 300px */
-    height: 300px; /* Increased size to 300px */
+    width: 300px; /* Picture size */
+    height: 300px; /* Picture size */
     background-size: cover;
     background-position: center;
     border-radius: 50%;
@@ -63,14 +63,14 @@
       🌹<br>
       I met her,<br>
       and her smile shattered the silence of my soul.<br>
-      It was not just a curve of lips<br>
+      It was not just a curve of lips—<br>
       it was the sun breaking chains of night,<br>
       the gentle fire that made me believe<br>
       in beauty that saves.
     </p>
     <p>
       Her eyes…<br>
-      O those eyes<br>
+      O those eyes—<br>
       like quiet oceans that pull me into their depth.<br>
       When I look, I drown willingly,<br>
       and even in drowning, I live.<br>
@@ -87,7 +87,7 @@
     </p>
     <p>
       Yet I walk through storms alone.<br>
-      I crave her hug<br>
+      I crave her hug—<br>
       crave it until my chest trembles.<br>
       Tears rise, not as weakness,<br>
       but as rivers of longing that cannot be dammed.<br>
@@ -97,7 +97,7 @@
       where my pain learns to sleep.”
     </p>
     <p>
-      I love her<br>
+      I love her—<br>
       with the violence of fire,<br>
       with the tenderness of rain.<br>
       Her beauty is not skin alone;<br>
@@ -110,7 +110,7 @@
     <p>
       So I cry,<br>
       so I crave,<br>
-      so I wait<br>
+      so I wait—<br>
       for her hug to descend like mercy,<br>
       to seal the day before it dies,<br>
       to remind me that love is not a promise deferred<br>
@@ -125,14 +125,25 @@
     </p>
     <p>
       ⚡ 🎧 TICOH 🎧:<br>
-     💞 ❤️D❤️O❤️U❤️B❤️LE❤️ ❤️G❤️O❤️A❤️T❤️ 💞. 
+      💞 ❤️D❤️O❤️U❤️B❤️L❤️E❤️ ❤️G❤️O❤️A❤️T❤️ 💞.
     </p>
   </div>
 
-  <audio autoplay loop hidden>
+  <audio autoplay loop hidden id="myAudio">
     <source src="justice.mp3" type="audio/mpeg">
     Your browser does not support the audio element.
   </audio>
+
+  <script>
+    // This script attempts to play the audio as soon as the page loads.
+    document.addEventListener('DOMContentLoaded', (event) => {
+        var audio = document.getElementById('myAudio');
+        audio.play().catch(error => {
+            // This runs if the browser blocks autoplay.
+            console.log('Autoplay was blocked. User interaction is required.');
+        });
+    });
+  </script>
 
 </body>
 </html>
