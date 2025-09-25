@@ -9,27 +9,38 @@
     align-items: center;
     background-color: black;
     margin: 0;
-    padding-top: 3vh;
+    /* Forces the body to use the full screen height */
+    height: 100vh; 
+    /* Evenly distributes the space between the elements */
+    justify-content: space-around;
+  }
+
+  /* Compresses spacing within the poem */
+  .message p {
+    margin: 0.3em 0;
   }
 
   .heart-and-pics-container {
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-bottom: 2vh;
+    /* Reduced margin */
+    margin-top: 1vh;
   }
 
   .image {
-    width: 300px; /* Increased size to 300px */
-    height: 300px; /* Increased size to 300px */
+    /* Sizing based on viewport height (vh) */
+    width: 15vh; 
+    height: 15vh;
     background-size: cover;
     background-position: center;
     border-radius: 50%;
-    margin: 0 20px;
+    margin: 0 10px;
   }
 
   .pumping-heart {
-    font-size: 250px;
+    /* Sizing based on viewport height (vh) */
+    font-size: 18vh;
     color: red;
     animation: pump 1s infinite;
   }
@@ -37,8 +48,9 @@
   .message {
     color: red;
     text-align: left;
-    font-size: 1.2em;
-    width: 80%;
+    /* Sizing based on viewport height (vh) to scale text */
+    font-size: 1.6vh;
+    width: 90%;
     max-width: 600px;
   }
 
@@ -70,7 +82,7 @@
     </p>
     <p>
       Her eyes…<br>
-      O those eyes—<br>
+      O those eyes<br>
       like quiet oceans that pull me into their depth.<br>
       When I look, I drown willingly,<br>
       and even in drowning, I live.<br>
@@ -87,7 +99,7 @@
     </p>
     <p>
       Yet I walk through storms alone.<br>
-      I crave her hug—<br>
+      I crave her hug<br>
       crave it until my chest trembles.<br>
       Tears rise, not as weakness,<br>
       but as rivers of longing that cannot be dammed.<br>
@@ -97,7 +109,7 @@
       where my pain learns to sleep.”
     </p>
     <p>
-      I love her—<br>
+      I love her<br>
       with the violence of fire,<br>
       with the tenderness of rain.<br>
       Her beauty is not skin alone;<br>
@@ -110,7 +122,7 @@
     <p>
       So I cry,<br>
       so I crave,<br>
-      so I wait—<br>
+      so I wait<br>
       for her hug to descend like mercy,<br>
       to seal the day before it dies,<br>
       to remind me that love is not a promise deferred<br>
