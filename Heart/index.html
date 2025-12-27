@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>A Quiet Riddle</title>
+<title>A Silent Parable</title>
 <style>
   body {
     display: flex;
@@ -21,8 +21,8 @@
   }
 
   .image {
-    width: 300px; /* Picture size */
-    height: 300px; /* Picture size */
+    width: 300px; /* Picture size fixed at 300px */
+    height: 300px; /* Picture size fixed at 300px */
     background-size: cover;
     background-position: center;
     border-radius: 50%;
@@ -45,7 +45,6 @@
     line-height: 1.6;
   }
 
-  /* Keyframes for the pumping heart animation */
   @keyframes pump {
     0% { transform: scale(1); }
     50% { transform: scale(1.1); }
@@ -81,14 +80,14 @@
       are felt before they are spoken.
     </p>
     <p>
-      She cared for me without ceremony,<br>
-      and when cold tested my strength,<br>
-      she gave me her hoodie—<br>
-      a warm parable of love without announcement.
+      She cared for me without ceremony;<br>
+      and when the cold found me below,<br>
+      from the balcony she lowered her hoodie<br>
+      a silent parable of love reaching down.
     </p>
     <p>
       So tell me, do you truly love me?<br>
-      For you leave my mind divided—<br>
+      For you leave my mind divided<br>
       certain like faith, uncertain like dreams,<br>
       confusing me in the most beautiful way.
     </p>
@@ -104,11 +103,10 @@
   </audio>
 
   <script>
-    // This script attempts to play the audio as soon as the page loads.
     document.addEventListener('DOMContentLoaded', (event) => {
         var audio = document.getElementById('myAudio');
         audio.play().catch(error => {
-            console.log('Autoplay was blocked. User interaction is required.');
+            console.log('Autoplay blocked. Interaction required.');
         });
     });
   </script>
